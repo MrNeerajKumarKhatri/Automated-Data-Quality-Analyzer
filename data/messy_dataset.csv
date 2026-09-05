@@ -1,0 +1,9 @@
+Name,Age,Salary,Rating,City
+Ali,21,50000,4.5,Karachi
+Sara,25,60000,4.2,Lahore
+Bilal,22,,3.8,Karachi
+Ahmed,25,60000,4.2,Lahore
+Fatima,23,55000,4.7,Islamabad
+Usman,-5,52000,4.1,Karachi
+Hina,24,5000000,4.3,Lahore
+Zain,27,58000,,Karachi

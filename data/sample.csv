@@ -1,0 +1,10 @@
+name,age,salary,country,purchases
+Ali,22,50000,Pakistan,5
+Sara,25,65000,Pakistan,8
+Ahmed,,45000,Pakistan,3
+John,31,,USA,7
+Sara,25,65000,Pakistan,8
+Fatima,28,55000,India,4
+Bilal,-5,48000,Pakistan,2
+David,200,72000,USA,10
+Ayesha,24,52000,pakistan,6

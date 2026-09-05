@@ -33,7 +33,20 @@ for graph in reports_dir.glob("*.png"):
     graph.unlink()
 
 
-df = pd.read_csv(csv_path)
+try:
+    df = pd.read_csv(csv_path)
+except pd.errors.EmptyDataError:
+    print("Error: The CSV file is empty.")
+    exit(1)
+except pd.errors.ParserError:
+    print("Error: Unable to parse the CSV file.")
+    exit(1)
+except UnicodeDecodeError:
+    print("Error: Unable to decode the CSV file. Check its encoding.")
+    exit(1)
+except Exception as e:
+    print(f"Error while reading CSV: {e}")
+    exit(1)
 
 profile_dataset(df)
 analyze_missing_values(df)
